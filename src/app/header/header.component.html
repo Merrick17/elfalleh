@@ -1,0 +1,61 @@
+<header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="#" class="logo">
+             
+            </a>
+            <img src="../../assets/images/fale7y-logo.png" alt="Softy Pinko"  style="height: 8%;width:8%;"/>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a [routerLink]="['/']" class="active">Acceuil</a></li>
+              <li><a href="#features">Info</a></li>
+              <li><a href="#work-process">Mobile</a></li>
+              <li>
+                <div class="dropdown">
+                  <a class="dropbtn">Categories</a>
+                  <div class="dropdown-content">
+                    <a [routerLink]="['/category/legumes']">Legumes</a>
+                    <a [routerLink]="['/category/jus']">Jus</a>
+                    <a [routerLink]="['/category/fruis']">Fruits</a>
+                    <a [routerLink]="['/category/confiture']">Confiture</a>
+                   
+                  </div>
+                </div>
+              </li>
+              <li><a [routerLink]="['/contact']">Contact</a></li>
+              <li><a uk-toggle="target: #login-modal">Login</a></li>
+              <li><a [routerLink]="['/cart']">Mon Panier</a></li>
+            </ul>
+            <a class="menu-trigger">
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="login-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">S'authentifier</h2>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+         
+        </div>
+        <div class="form-group">
+          <label for="psw">Mot de passe </label>
+          <input type="password" class="form-control" id="psw" aria-describedby="emailHelp">
+         
+        </div>
+        <p class="uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button" >Cancel</button>
+            <button class="uk-button uk-button-primary uk-modal-close" type="button" >Se Connecter</button>
+        </p>
+    </div>
+</div>
